@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width"/>
+        <title>Dashboard ruimte</title>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>  
+        <style>
+
+            div{
+                background-color: lightblue;
+                margin: auto;
+                margin-top: 20px;
+                padding: 30px;
+                width: 250px;
+                display: flex;
+            }
+
+            .div1{
+                height: 200px;
+                }
+
+            .div2{
+                height: 300px;    
+                            }
+
+            .div3{
+                height: 200px;             
+            }
+
+
+            body, html{
+                width: 100%;
+                margin: 0;
+                background-color: #20284F;
+            }
+
+            body{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            @media only screen and (min-width: 600px){
+                div{
+                    width: 70%;
+                    margin: auto;
+                    margin-top: 20px;
+                }
+
+            }
+
+             @media only screen and (min-width: 900px){
+                div{
+                    width: 30%;
+                    margin: 20px;
+                }
+
+                .div1{
+                    width: 40%;
+                    height: 200px;
+                }
+
+                .div2{
+                    width: 30%;
+                    height: 200px;
+
+                }
+
+                .div3{
+                    width: 30%;
+                    height: 200px;
+
+                }
+            }
+
+             @media only screen and (min-width: 1300px){
+                div{
+                    width: 20%;
+                }
+
+                .div1{
+                    width: 30%;
+                    height: 200px;
+
+                }
+
+                .div2{
+                    width: 20%;
+                    height: 250px;
+
+                }
+
+                .div3{
+                    width: 30%;
+                    height: 200px;
+
+                }
+
+            }
+
+
+
+
+
+        </style>
+    </head>
+    <body>
+
+        
+        <div class="div1">
+            <canvas id="bar"></canvas>
+            <script type="text/javascript" src='bar.js'></script>
+        </div>
+
+        <div class="div2">
+            <canvas id="doughnut"></canvas>
+            <script type="text/javascript" src='doughnut.js'></script>
+        </div>
+
+        <div class="div3">
+            <canvas id="line"></canvas>
+            <script type="text/javascript" src='line.js'></script>
+        </div>
+        
+
+    </body>
+</html>
